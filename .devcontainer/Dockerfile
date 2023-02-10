@@ -1,6 +1,8 @@
 FROM stackql/stackql-jupyter-base:latest AS stackql-jupyter
 WORKDIR /jupyter
 USER root
+RUN mkdir -p /home/jovyan/.jupyter
+COPY .devcontainer/jupyter_lab_config.py /home/jovyan/.jupyter/jupyter_lab_config.py
 # # copy example notebooks to Jupyter workspace
 # COPY ./notebooks/* /jupyter
 # RUN chmod 644 *.ipynb && \
