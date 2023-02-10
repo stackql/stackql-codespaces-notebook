@@ -3,6 +3,7 @@ WORKDIR /jupyter
 USER root
 RUN mkdir -p /home/jovyan/.jupyter
 COPY .devcontainer/jupyter_lab_config.py /home/jovyan/.jupyter/jupyter_lab_config.py
+RUN chown -R jovyan:users /home/jovyan
 # # copy example notebooks to Jupyter workspace
 # COPY ./notebooks/* /jupyter
 # RUN chmod 644 *.ipynb && \
