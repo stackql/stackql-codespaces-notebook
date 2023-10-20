@@ -1,21 +1,15 @@
 {
-  "build": { "dockerfile": "Dockerfile" },
-  "hostRequirements": {
-    "cpus": 2
-  },
-  "forwardPorts": [ 8888 ],
-  "waitFor": "onCreateCommand",
-  "updateContentCommand": "python3 -m pip install -r requirements.txt",
-  "postCreateCommand": "",
+  "image": "stackql/stackql-jupyter-demo",
+  "forwardPorts": [8888],
   "customizations": {
-    "codespaces": {
-      "openFiles": []
-    },
     "vscode": {
       "extensions": [
         "ms-toolsai.jupyter",
         "ms-python.python"
-      ]
+      ],
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+      }     
     }
   }
 }
