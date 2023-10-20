@@ -1,6 +1,5 @@
 {
   "image": "stackql/stackql-jupyter-demo",
-  "forwardPorts": [8888],
   "customizations": {
     "vscode": {
       "extensions": [
