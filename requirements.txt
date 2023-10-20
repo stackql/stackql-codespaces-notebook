@@ -1,4 +1,0 @@
-matplotlib
-pandas
-psycopg2
-pystackql

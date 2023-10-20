@@ -1,14 +1,14 @@
 {
-  "image": "stackql/stackql-jupyter-demo",
+  "build": { "dockerfile": "Dockerfile" },
+  "hostRequirements": {
+    "cpus": 2
+  },
   "customizations": {
     "vscode": {
       "extensions": [
         "ms-toolsai.jupyter",
         "ms-python.python"
-      ],
-      "settings": {
-        "terminal.integrated.shell.linux": "/bin/bash"
-      }     
+      ]
     }
   }
 }
