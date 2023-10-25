@@ -1,5 +1,6 @@
 {
-  "build": { "dockerfile": "Dockerfile" },
+  "name": "stackql-codespaces-demo",
+  "image": "stackql/stackql-codespaces-base",
   "hostRequirements": {
     "cpus": 2
   },
