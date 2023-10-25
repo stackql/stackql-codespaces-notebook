@@ -1,5 +1,9 @@
 {
   "image": "stackql/stackql-codespaces-base",
+  "containerEnv": {
+    "STACKQL_GITHUB_PASSWORD": "${secrets:STACKQL_GITHUB_PASSWORD}",
+    "STACKQL_GITHUB_USERNAME": "${secrets:STACKQL_GITHUB_USERNAME}"
+  },
   "customizations": {
     "vscode": {
       "extensions": [
