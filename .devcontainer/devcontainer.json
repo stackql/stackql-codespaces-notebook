@@ -1,9 +1,5 @@
 {
-  "name": "stackql-codespaces-demo",
   "image": "stackql/stackql-codespaces-base",
-  "hostRequirements": {
-    "cpus": 2
-  },
   "customizations": {
     "vscode": {
       "extensions": [
