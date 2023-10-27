@@ -1,9 +1,12 @@
 {
-  "name": "stackql-codespaces-demo",
   "image": "stackql/stackql-codespaces-base",
-  "hostRequirements": {
-    "cpus": 2
+  "containerEnv": {
+    "STACKQL_GITHUB_PASSWORD": "${secrets:STACKQL_GITHUB_PASSWORD}",
+    "STACKQL_GITHUB_USERNAME": "${secrets:STACKQL_GITHUB_USERNAME}"
   },
+  "hostRequirements": {
+    "cpus": 16
+  },  
   "customizations": {
     "vscode": {
       "extensions": [
