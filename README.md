@@ -28,15 +28,21 @@ This repository serves as a template for setting up a development environment fo
 
 ```json
 {
-  "image": "stackql/stackql-codespaces-base",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
   "containerEnv": {
     "STACKQL_GITHUB_PASSWORD": "${{ secrets.STACKQL_GITHUB_PASSWORD }}",
     "STACKQL_GITHUB_USERNAME": "${{ secrets.STACKQL_GITHUB_USERNAME }}"
-  },
+  },  
   "hostRequirements": {
     "cpus": 2
-  },  
+  },
+  "waitFor": "onCreateCommand",
+  "updateContentCommand": "python3 -m pip install -r requirements.txt",
+  "postCreateCommand": "",
   "customizations": {
+    "codespaces": {
+      "openFiles": []
+    },
     "vscode": {
       "extensions": [
         "ms-toolsai.jupyter",
