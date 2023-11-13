@@ -5,7 +5,7 @@
     "STACKQL_GITHUB_USERNAME": "${secrets:STACKQL_GITHUB_USERNAME}"
   },
   "hostRequirements": {
-    "cpus": 2
+    "cpus": 4
   },  
   "customizations": {
     "vscode": {
