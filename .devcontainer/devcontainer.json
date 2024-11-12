@@ -10,6 +10,7 @@
   "waitFor": "onCreateCommand",
   "updateContentCommand": "python3 -m pip install -r requirements.txt",
   "postCreateCommand": "",
+  "postStartCommand": "git reset --hard && git clean -fd",
   "customizations": {
     "codespaces": {
       "openFiles": []
